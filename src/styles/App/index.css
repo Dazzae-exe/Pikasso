@@ -1,0 +1,90 @@
+/* css variables & root */
+:root {
+  --ubuntu-family: "Ubuntu", sans-serif;
+  --font-base: 16px;
+  --bg-main-color: #c8d8dd;
+  --bg-secondary-color: #25650e;
+  --text-main-color: #25650e;
+  --text-secondary-color: #c8d8dd;
+  --button-main-color: #25650e;
+  --button-secondary-color: #c8d8dd;
+  background-color: var(--bg-main-color);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--ubuntu-family);
+  font-size: var(--font-base);
+  color: var(--text-main-color);
+}
+
+/* google fonts */
+.ubuntu-light {
+  font-family: var(--ubuntu-family);
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ubuntu-regular {
+  font-family: var(--ubuntu-family);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ubuntu-medium {
+  font-family: var(--ubuntu-family);
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ubuntu-bold {
+  font-family: var(--ubuntu-family);
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* heading */
+
+h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* links routing */
+
+a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+/* button */
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* images && figure */
+
+figure {
+  margin: 0;
+}
