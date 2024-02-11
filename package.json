@@ -1,8 +1,10 @@
 {
   "name": "pikasso",
+  "author": "Christian Marín <chrismarin0607@gmail.com>",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
