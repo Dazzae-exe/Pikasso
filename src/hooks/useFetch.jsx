@@ -13,6 +13,10 @@ function useFetch(url, params) {
       )
       .catch((err) => setFetchItems(err))
       .finally(setIsLoading(false));
+
+    () => {
+      return AbortSignal.abort();
+    };
   }, []);
 
   return { fetchItems, isLoading };

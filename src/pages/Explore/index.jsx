@@ -1,11 +1,14 @@
 import React from "react";
-import Gallery from "../../components/Gallery";
 import ExploreCards from "../../components/ExploreCards";
+import { UserContext } from "../../Context";
+import Gallery from "../../components/Gallery";
 
 function Explore() {
+  const { user } = React.useContext(UserContext);
+
   return (
     <>
-      <ExploreCards />
+    {!user ? <ExploreCards /> : ""}
       <Gallery />
     </>
   );

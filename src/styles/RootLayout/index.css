@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 16px;
+    gap: 0px 16px;
 
     h2 {
         display: flex;
@@ -19,16 +20,55 @@
         height: inherit;
     }
 
+    .searchForm {
+      position: relative;
+      max-width: 380px;
+      width: 100%;
+      min-height: 34px;
+      display: flex;
+      align-items: center;
+
+      .searchForm-btn {
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        padding: 0;
+        margin: 0;
+        display: none;
+      }
+
+      .searchForm-input {
+        width: 50%;
+        transition: all 0.3s ease-in-out;
+        min-height: 40px;
+        border-radius: 24px;
+        outline: none;
+        border: none;
+        padding: 0px 16px;
+        background-color: var(--bg-secondary-color);
+        color: var(--text-secondary-color);
+        cursor: pointer;
+
+        &&:focus {
+          width: 100%;
+          opacity: 0.97;
+        }
+      }
+    }
+
     .layoutHeader-nav {
       width: 100%;
       height: inherit;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
 
       ul {
         display: flex;
         list-style: none;
         flex-direction: row;
         justify-content: flex-end;
-        gap: 0 8px;
+        gap: 0 12px;
 
         li {
             min-width: 60px;
@@ -38,7 +78,10 @@
             border-radius: 999px;
 
             .layoutHeader-link {
-                padding: 8px 8px;
+                display: flex;
+                align-items: center;
+                padding: 0px 16px;
+                height: 40px;
                 width: fit-content;
                 background-color: var(--bg-secondary-color);
                 color: var(--text-secondary-color);

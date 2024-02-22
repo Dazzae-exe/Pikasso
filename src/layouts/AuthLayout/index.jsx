@@ -1,12 +1,8 @@
 import React from "react";
 import "../../styles/AuthLayout/index.css";
-import { Outlet, useLocation } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
 function AuthLayout() {
-  const location = useLocation();
-
-  console.log(location.pathname);
-
   return (
     <section className="authLayout-root">
       <div className="authLayout-container">

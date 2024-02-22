@@ -31,8 +31,9 @@
     }
 
     button {
+      margin-top: 16px;
       width: 256px;
-      min-height: 36px;
+      min-height: 48px;
       border-radius: 999px;
       outline: none;
       border: none;
